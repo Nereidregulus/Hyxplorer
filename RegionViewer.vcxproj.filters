@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Nodes">
+      <UniqueIdentifier>{c2d7bae1-277d-4886-a62a-2054e665a765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Nodes">
+      <UniqueIdentifier>{f27b3c9c-6121-4ade-8174-b98a021cf6d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools">
+      <UniqueIdentifier>{7d52d263-566e-455f-b167-aab3dbac6c34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Tools\zstd">
+      <UniqueIdentifier>{311dd818-0783-445c-b43d-a8f1eac1b3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Tools">
+      <UniqueIdentifier>{0fc85ead-3b3c-472d-a075-8f611d70eece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Tools\zstd">
+      <UniqueIdentifier>{db4151a8-a411-4e25-8ffc-8cdd051bf63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{af5a5468-d93b-4ba4-acc7-4024e3495137}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RegionViewer.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeRegion.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeNode.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeRoot.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dictBuilder\cover.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\debug.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dictBuilder\divsufsort.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\entropy_common.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\error_private.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dictBuilder\fastcover.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\fse_compress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\fse_decompress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\hist.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\huf_compress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\decompress\huf_decompress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\pool.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\threading.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\xxhash.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\deprecated\zbuff_common.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\deprecated\zbuff_compress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\deprecated\zbuff_decompress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\dictBuilder\zdict.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\common\zstd_common.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_compress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_compress_literals.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_compress_sequences.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_compress_superblock.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\decompress\zstd_ddict.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\decompress\zstd_decompress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\decompress\zstd_decompress_block.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_double_fast.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_fast.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_lazy.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_ldm.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_opt.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstd_preSplit.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v01.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v02.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v03.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v04.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v05.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v06.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\legacy\zstd_v07.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\compress\zstdmt_compress.c">
+      <Filter>Fichiers sources\Tools\zstd</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeComponents.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlockComponentChunk.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlockComponents.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeEnvironmentChunk.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeChunkColumn.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSections.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeSubSection.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlocks.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlockVersion.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeBlockData.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeGenericList.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeEnvData.cpp">
+      <Filter>Fichiers sources\Nodes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NodeRegion.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="TreeNode.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeRoot.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\allocations.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\bits.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\bitstream.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\clevels.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\compiler.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dictBuilder\cover.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\cpu.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\debug.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\dictBuilder\divsufsort.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\error_private.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\fse.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\hist.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\huf.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\mem.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\pool.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\portability_macros.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\threading.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\xxhash.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\deprecated\zbuff.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\zdict.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\zstd.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_compress_internal.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_compress_literals.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_compress_sequences.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_compress_superblock.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_cwksp.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\decompress\zstd_ddict.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\decompress\zstd_decompress_block.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\decompress\zstd_decompress_internal.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\zstd_deps.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_double_fast.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\zstd_errors.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_fast.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\zstd_internal.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_lazy.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_ldm.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_ldm_geartab.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_legacy.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_opt.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstd_preSplit.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\common\zstd_trace.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v01.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v02.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v03.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v04.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v05.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v06.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\legacy\zstd_v07.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\compress\zstdmt_compress.h">
+      <Filter>Fichiers d%27en-tête\Tools\zstd</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeComponents.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlockComponentChunk.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlockComponents.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeEnvironmentChunk.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeChunkColumn.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSections.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeSubSection.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlocks.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlockVersion.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeBlockData.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeGenericList.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeEnvData.h">
+      <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

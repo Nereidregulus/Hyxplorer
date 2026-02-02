@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{29731111-7d31-4f87-8313-3e43bf2a5c12}</ProjectGuid>
+    <RootNamespace>RegionViewer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Hyxplorer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PublicIncludeDirectories>
+    </PublicIncludeDirectories>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)/lib;$(SolutionDir)/imgui;$(SolutionDir)/imgui/backends;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>d3d9.lib;$(CoreLibraryDependencies);%(AdditionalDependencies);</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)/lib;$(SolutionDir)/imgui;$(SolutionDir)/imgui/backends;%(AdditionalIncludeDirectories);$(DXSDK_DIR)Include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)/Lib/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d9.lib;$(CoreLibraryDependencies);%(AdditionalDependencies);</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui\backends\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="imgui\imgui.cpp" />
+    <ClCompile Include="imgui\imgui_demo.cpp" />
+    <ClCompile Include="imgui\imgui_draw.cpp" />
+    <ClCompile Include="imgui\imgui_tables.cpp" />
+    <ClCompile Include="imgui\imgui_widgets.cpp" />
+    <ClCompile Include="lib\common\debug.c" />
+    <ClCompile Include="lib\common\entropy_common.c" />
+    <ClCompile Include="lib\common\error_private.c" />
+    <ClCompile Include="lib\common\fse_decompress.c" />
+    <ClCompile Include="lib\common\pool.c" />
+    <ClCompile Include="lib\common\threading.c" />
+    <ClCompile Include="lib\common\xxhash.c" />
+    <ClCompile Include="lib\common\zstd_common.c" />
+    <ClCompile Include="lib\compress\fse_compress.c" />
+    <ClCompile Include="lib\compress\hist.c" />
+    <ClCompile Include="lib\compress\huf_compress.c" />
+    <ClCompile Include="lib\compress\zstdmt_compress.c" />
+    <ClCompile Include="lib\compress\zstd_compress.c" />
+    <ClCompile Include="lib\compress\zstd_compress_literals.c" />
+    <ClCompile Include="lib\compress\zstd_compress_sequences.c" />
+    <ClCompile Include="lib\compress\zstd_compress_superblock.c" />
+    <ClCompile Include="lib\compress\zstd_double_fast.c" />
+    <ClCompile Include="lib\compress\zstd_fast.c" />
+    <ClCompile Include="lib\compress\zstd_lazy.c" />
+    <ClCompile Include="lib\compress\zstd_ldm.c" />
+    <ClCompile Include="lib\compress\zstd_opt.c" />
+    <ClCompile Include="lib\compress\zstd_preSplit.c" />
+    <ClCompile Include="lib\decompress\huf_decompress.c" />
+    <ClCompile Include="lib\decompress\zstd_ddict.c" />
+    <ClCompile Include="lib\decompress\zstd_decompress.c" />
+    <ClCompile Include="lib\decompress\zstd_decompress_block.c" />
+    <ClCompile Include="lib\deprecated\zbuff_common.c" />
+    <ClCompile Include="lib\deprecated\zbuff_compress.c" />
+    <ClCompile Include="lib\deprecated\zbuff_decompress.c" />
+    <ClCompile Include="lib\dictBuilder\cover.c" />
+    <ClCompile Include="lib\dictBuilder\divsufsort.c" />
+    <ClCompile Include="lib\dictBuilder\fastcover.c" />
+    <ClCompile Include="lib\dictBuilder\zdict.c" />
+    <ClCompile Include="lib\legacy\zstd_v01.c" />
+    <ClCompile Include="lib\legacy\zstd_v02.c" />
+    <ClCompile Include="lib\legacy\zstd_v03.c" />
+    <ClCompile Include="lib\legacy\zstd_v04.c" />
+    <ClCompile Include="lib\legacy\zstd_v05.c" />
+    <ClCompile Include="lib\legacy\zstd_v06.c" />
+    <ClCompile Include="lib\legacy\zstd_v07.c" />
+    <ClCompile Include="NodeBlockComponentChunk.cpp" />
+    <ClCompile Include="NodeBlockComponents.cpp" />
+    <ClCompile Include="NodeBlockData.cpp" />
+    <ClCompile Include="NodeBlocks.cpp" />
+    <ClCompile Include="NodeBlockVersion.cpp" />
+    <ClCompile Include="NodeChunkColumn.cpp" />
+    <ClCompile Include="NodeComponents.cpp" />
+    <ClCompile Include="NodeEnvData.cpp" />
+    <ClCompile Include="NodeEnvironmentChunk.cpp" />
+    <ClCompile Include="NodeGenericList.cpp" />
+    <ClCompile Include="NodeRegion.cpp" />
+    <ClCompile Include="NodeRoot.cpp" />
+    <ClCompile Include="NodeSections.cpp" />
+    <ClCompile Include="NodeSubSection.cpp" />
+    <ClCompile Include="RegionViewer.cpp" />
+    <ClCompile Include="TreeNode.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui\backends\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="imgui\imconfig.h" />
+    <ClInclude Include="imgui\imgui.h" />
+    <ClInclude Include="imgui\imgui_internal.h" />
+    <ClInclude Include="lib\common\allocations.h" />
+    <ClInclude Include="lib\common\bits.h" />
+    <ClInclude Include="lib\common\bitstream.h" />
+    <ClInclude Include="lib\common\compiler.h" />
+    <ClInclude Include="lib\common\cpu.h" />
+    <ClInclude Include="lib\common\debug.h" />
+    <ClInclude Include="lib\common\error_private.h" />
+    <ClInclude Include="lib\common\fse.h" />
+    <ClInclude Include="lib\common\huf.h" />
+    <ClInclude Include="lib\common\mem.h" />
+    <ClInclude Include="lib\common\pool.h" />
+    <ClInclude Include="lib\common\portability_macros.h" />
+    <ClInclude Include="lib\common\threading.h" />
+    <ClInclude Include="lib\common\xxhash.h" />
+    <ClInclude Include="lib\common\zstd_deps.h" />
+    <ClInclude Include="lib\common\zstd_internal.h" />
+    <ClInclude Include="lib\common\zstd_trace.h" />
+    <ClInclude Include="lib\compress\clevels.h" />
+    <ClInclude Include="lib\compress\hist.h" />
+    <ClInclude Include="lib\compress\zstdmt_compress.h" />
+    <ClInclude Include="lib\compress\zstd_compress_internal.h" />
+    <ClInclude Include="lib\compress\zstd_compress_literals.h" />
+    <ClInclude Include="lib\compress\zstd_compress_sequences.h" />
+    <ClInclude Include="lib\compress\zstd_compress_superblock.h" />
+    <ClInclude Include="lib\compress\zstd_cwksp.h" />
+    <ClInclude Include="lib\compress\zstd_double_fast.h" />
+    <ClInclude Include="lib\compress\zstd_fast.h" />
+    <ClInclude Include="lib\compress\zstd_lazy.h" />
+    <ClInclude Include="lib\compress\zstd_ldm.h" />
+    <ClInclude Include="lib\compress\zstd_ldm_geartab.h" />
+    <ClInclude Include="lib\compress\zstd_opt.h" />
+    <ClInclude Include="lib\compress\zstd_preSplit.h" />
+    <ClInclude Include="lib\decompress\zstd_ddict.h" />
+    <ClInclude Include="lib\decompress\zstd_decompress_block.h" />
+    <ClInclude Include="lib\decompress\zstd_decompress_internal.h" />
+    <ClInclude Include="lib\deprecated\zbuff.h" />
+    <ClInclude Include="lib\dictBuilder\cover.h" />
+    <ClInclude Include="lib\dictBuilder\divsufsort.h" />
+    <ClInclude Include="lib\legacy\zstd_legacy.h" />
+    <ClInclude Include="lib\legacy\zstd_v01.h" />
+    <ClInclude Include="lib\legacy\zstd_v02.h" />
+    <ClInclude Include="lib\legacy\zstd_v03.h" />
+    <ClInclude Include="lib\legacy\zstd_v04.h" />
+    <ClInclude Include="lib\legacy\zstd_v05.h" />
+    <ClInclude Include="lib\legacy\zstd_v06.h" />
+    <ClInclude Include="lib\legacy\zstd_v07.h" />
+    <ClInclude Include="lib\zdict.h" />
+    <ClInclude Include="lib\zstd.h" />
+    <ClInclude Include="lib\zstd_errors.h" />
+    <ClInclude Include="NodeBlockComponentChunk.h" />
+    <ClInclude Include="NodeBlockComponents.h" />
+    <ClInclude Include="NodeBlockData.h" />
+    <ClInclude Include="NodeBlocks.h" />
+    <ClInclude Include="NodeBlockVersion.h" />
+    <ClInclude Include="NodeChunkColumn.h" />
+    <ClInclude Include="NodeComponents.h" />
+    <ClInclude Include="NodeEnvData.h" />
+    <ClInclude Include="NodeEnvironmentChunk.h" />
+    <ClInclude Include="NodeGenericList.h" />
+    <ClInclude Include="NodeRegion.h" />
+    <ClInclude Include="NodeRoot.h" />
+    <ClInclude Include="NodeSections.h" />
+    <ClInclude Include="NodeSubSection.h" />
+    <ClInclude Include="TreeNode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
