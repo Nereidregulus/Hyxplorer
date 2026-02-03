@@ -1,5 +1,8 @@
 #include "NodeRegion.h"
 
+
+NodeRegion::NodeRegion() {}
+
 NodeRegion::NodeRegion(const std::string& region_file)
 {
     name = "Region";

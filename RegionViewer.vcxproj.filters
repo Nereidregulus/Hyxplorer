@@ -225,6 +225,9 @@
     <ClCompile Include="NodeEnvData.cpp">
       <Filter>Fichiers sources\Nodes</Filter>
     </ClCompile>
+    <ClCompile Include="Hyxplorer.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NodeRegion.h">
@@ -433,6 +436,9 @@
     </ClInclude>
     <ClInclude Include="NodeEnvData.h">
       <Filter>Fichiers d%27en-tête\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Hyxplorer.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

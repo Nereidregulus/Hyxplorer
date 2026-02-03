@@ -8,6 +8,7 @@
 class NodeRegion : public TreeNode
 {
 public:
+	NodeRegion();
 	NodeRegion(const std::string& region_file);
 	~NodeRegion();
 

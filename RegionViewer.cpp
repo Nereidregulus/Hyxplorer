@@ -13,6 +13,7 @@
 #include <tchar.h>
 
 #include "NodeRegion.h"
+#include "Hyxplorer.h"
 
 // Data
 static LPDIRECT3D9              g_pD3D = nullptr;
@@ -26,6 +27,15 @@ bool CreateDeviceD3D(HWND hWnd);
 void CleanupDeviceD3D();
 void ResetDevice();
 LRESULT WINAPI WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
+
+std::string file_path;
+
+
+void OpenFile()
+{
+
+}
 
 // Main code
 int main(int, char**)
@@ -72,12 +82,11 @@ int main(int, char**)
     ImGui_ImplDX9_Init(g_pd3dDevice);
 
     // Our state
-    bool show_demo_window = true;
+    bool show_demo_window = false;
     bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
-
-    NodeRegion region("C:\\Users\\User\\Documents\\Hytale\\ToolConvertMc\\-1.0.region.bin");
+    Hyxplorer hyxplorer_app;
 
     // Main loop
     bool done = false;
@@ -124,15 +133,21 @@ int main(int, char**)
         ImGui_ImplWin32_NewFrame();
         ImGui::NewFrame();
 
+        if (ImGui::IsKeyPressed(ImGuiKey_LeftCtrl) && ImGui::IsKeyPressed(ImGuiKey_H))
+        {
+            show_demo_window ^= 1;
+        }
+
         if (show_demo_window)
             ImGui::ShowDemoWindow(&show_demo_window);
 
-        // Node viewer
-        ImGui::Begin("Region Viewer");
+        hyxplorer_app.display();
 
-        region.display();
 
-        ImGui::End();
+        const ImGuiViewport* main_viewport = ImGui::GetMainViewport();
+        ImGui::SetNextWindowPos(ImVec2(main_viewport->WorkPos.x, main_viewport->WorkPos.y), ImGuiCond_Always);
+        ImGui::SetNextWindowSize(ImVec2(main_viewport->WorkSize.x/2, main_viewport->WorkSize.y), ImGuiCond_Always);
+
 
         // Rendering
         ImGui::EndFrame();
