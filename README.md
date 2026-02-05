@@ -8,7 +8,9 @@ This project is currently ongoing.
 - :white_check_mark:   Region file parsing
 - :white_check_mark:   Block parsing
 - :white_check_mark:   Environment (biome) parsing
-- :construction: Entity Parsing
+- :construction: Entity Parsing 
+- :white_square_button: Change engine to Vulkan for compatility with Linux
+- :white_square_button: Allow compilation from GCC instead of just MSVC
 - :white_square_button: Full file parsing
 - :white_square_button: Basic editing (no resize)
 - :white_square_button: Full editing (section resizing)
